@@ -18,7 +18,7 @@ public class RightViewBT extends BinaryTree {
         while(!q.isEmpty()){
             int size = q.size();
             TreeNode temp = q.peek();
-            for(int i = 0; i < q.size(); i++){
+            for(int i = 0; i < size; i++){
                 if(q.peek().left != null){
                     q.add(q.peek().left);
                 }

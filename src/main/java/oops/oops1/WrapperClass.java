@@ -12,13 +12,14 @@ public class WrapperClass {
 
         swap(a, b);
 
-        System.out.println(a + " " + b);
+        System.out.println(a + " " + b); //10 20
 
-//        final int bonus = 2;
-//        bonus = 3;
+        final int bonus = 2;
+//        bonus = 3; //This is not allowed so our code will not compiled
 
         final A kunal = new A("Kunal Kushwaha");
         kunal.name = "other name";
+        System.out.println(kunal.name); //name gets updated;
 
         // when a non primitive is final, you cannot reassign it.
 //        kunal = new A("new object");

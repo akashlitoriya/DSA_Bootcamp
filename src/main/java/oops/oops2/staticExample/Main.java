@@ -11,7 +11,7 @@ public class Main {
         System.out.println(Human.population);
         System.out.println(Human.population);
 
-        // greeting(); // This is not allowed as non-static things can't be used without creating object
+//         greeting(); // This is not allowed as non-static things can't be used without creating object
     }
     //Does not depend on object
     static void fun(){

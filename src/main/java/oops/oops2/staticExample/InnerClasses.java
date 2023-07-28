@@ -43,8 +43,8 @@ public class InnerClasses {
 
         Test2 e = new Test2("Anita");
         Test2 f = new Test2("Narendra");
-        System.out.println(e.name);
-        System.out.println(f.name);
+        System.out.println(e.name);  //Narendra
+        System.out.println(f.name);  //Narendra
         /*
         here Test2 is static, so it is independent of InnerClasses. The name property inside Test2 is also static
         so name is independent of objects of Test2, Hence we got the same output for both objects

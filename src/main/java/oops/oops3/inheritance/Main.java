@@ -18,7 +18,7 @@ public class Main {
         // Type of reference variable will determine what all values will be accessed. Here type of reference variable
         // is Box, so it will only access values that are in the Box
 
-        //BoxWeight boxw = new Box(1,2,3);
+//        BoxWeight boxw = new Box(1,2,3);
 
 
 
@@ -27,10 +27,10 @@ public class Main {
 
 
         Box objStat = new BoxWeight();
-        objStat.greeting();
+        objStat.greeting();  //Box class greeting will be called
 
         BoxWeight objStat1 = new BoxWeight();
-        objStat1.greeting();
+        objStat1.greeting();   //BoxWeight class greeting will be called
 
     }
 }
