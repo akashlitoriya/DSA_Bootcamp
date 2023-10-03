@@ -5,6 +5,7 @@ public class StringDivisible {
 
     //Approach - 1;
     public int[] divisibilityArray(String word, int m) {
+
         int[] divArray = new int[word.length()];
         for(int i = 0; i < word.length(); i++){
             if(divisible(word.substring(0, i + 1),m)){

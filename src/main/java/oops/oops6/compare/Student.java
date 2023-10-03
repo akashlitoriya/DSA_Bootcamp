@@ -9,6 +9,7 @@ public class Student implements Comparable<Student>{
     }
 
     public int compareTo( Student o){
-        return this.roll_no - o.roll_no;
+        return (int)(this.marks - o.marks);
     }
+
 }
