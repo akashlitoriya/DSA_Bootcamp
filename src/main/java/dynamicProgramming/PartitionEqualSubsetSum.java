@@ -1,6 +1,6 @@
 package dynamicProgramming;
 import java.util.*;
-public class PartitionEqualSubsetSum {
+public class  PartitionEqualSubsetSum {
     public boolean canPartition(int[] nums) {
         int sum = 0;
         for(int item: nums){

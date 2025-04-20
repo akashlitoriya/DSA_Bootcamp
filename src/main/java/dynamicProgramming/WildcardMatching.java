@@ -36,12 +36,12 @@ public class WildcardMatching {
         }
         if(dp[i][j] != -1) return dp[i][j] == 0 ? false : true;
         if(s1.charAt(i) == s2.charAt(j) || s1.charAt(i) == '?'){
-            boolean ans = recur(i-1, j-1, s1, s2, dp);
+            boolean ans = memo(i-1, j-1, s1, s2, dp);
             dp[i][j] = ans? 1: 0;
             return ans;
         }
         if(s1.charAt(i) == '*'){
-            boolean ans = recur(i-1, j, s1,s2, dp) || recur(i, j-1, s1, s2, dp);
+            boolean ans = memo(i-1, j, s1,s2, dp) || memo(i, j-1, s1, s2, dp);
             dp[i][j] = ans? 1: 0;
             return ans;
         }

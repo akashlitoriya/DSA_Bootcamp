@@ -20,7 +20,7 @@ public class CountSubsetSumK {
             if(target == 0 && nums[0] == target){
                 return 2;
             }
-            if(target == 0 || nums[0] == 0){
+            if(target == 0 || nums[0] == target){
                 return 1;
             }
             return 0;
